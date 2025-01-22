@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="templates/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="ri ri-close-circle-fill" onclick="hiddenMenu()"></i>
+                <ul>
+                    <li><a href="/templates/index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="/templates/service.html">SERVICES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="ri ri-menu-line" onclick="showMenu()"></i>
+        </nav>
+        <h1>Get Started</h1>
+    </section>
+
+    <section id="interaction-section">
+        <div class="container">
+            <div id="file-upload-area">
+                <h2>Upload Image or Document</h2>
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label for="file">Choose a file:</label>
+                        <input type="file" id="file" name="file" accept="image/*,.pdf" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Your question:</label>
+                        <textarea id="query" name="query" rows="3" placeholder="Ask about the uploaded file..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Upload & Ask</button>
+                </form>
+            </div>
+            <div id="chat-area" >
+                <h2>Chat with Assistant</h2>
+                <div id="chat-history">
+                <form id="chat-form">
+                    <div class="form-group">
+                        <label for="chat-query">Your question:</label>
+                        <textarea id="chat-query" name="query" rows="3" placeholder="Ask a follow-up question..." required></textarea>
+                    </div>
+                </div>
+                    <button type="submit" class="btn">Ask</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class='footer'>
+        <h4>About Us</h4>
+        <p>We are a Non-profit Organization maintained by Khan Ramsha and Ayaan Amjad <br>for a collective overall good of society</p>
+        <div class='icons'>
+            <i class="ri ri-facebook-circle-fill"></i>
+            <i class="ri ri-instagram-fill"></i>
+            <i class="ri ri-linkedin-fill"></i>
+            <i class="ri ri-github-fill"></i>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
